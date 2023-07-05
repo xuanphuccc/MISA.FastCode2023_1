@@ -1,0 +1,73 @@
+button{
+    cursor: pointer;
+}
+
+.m-button{
+    border-color: var(--border-color-default);
+    border-style: solid;
+    border-width: 0;
+    outline: none;
+    border-radius: 4px;
+    height: 36px;
+    min-width: 80px;
+    padding: 0 16px;
+}
+
+.m-button-icon{
+    background-position-x: 12px !important;
+    background-position-y: center;
+    padding-left: 36px;
+    min-width: 80px;
+}
+
+.m-button--default{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.m-button--cancel{
+    border: 1px solid #E0E0E0;
+    background-color: #fff;
+}
+
+.m-button--cancel:hover,.m-button--cancel:focus{
+    border: 1px solid #E0E0E0;
+    background-color: #dddddd;
+    outline: 1px solid var(--color-hover);
+}
+
+.m-button--delete{
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.m-button--primary{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.m-button--primary:hover{
+    background-color: var(--color-hover);
+    outline: 1px solid var(--color-hover);
+}
+
+.m-button--primary:focus{
+    background-color: var(--color-focus);
+    outline: 1px solid var(--color-hover);
+}
+
+.btn--notext{
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color-default)
+}
+
+.btn--nobg{
+    background: unset;
+}
+
+.btn--noborder{
+    border: unset;
+    font-weight: 700;
+}
