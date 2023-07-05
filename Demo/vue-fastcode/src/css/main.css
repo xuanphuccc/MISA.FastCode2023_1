@@ -3,8 +3,6 @@
 @import url(./responsive.css);
 @import url(./base/table.css);
 @import url(./layout/page.css);
-@import url(./base/dialog.css);
-@import url(./base/icon.css);
 @import url(./base/checkbox.css);
 @import url(./base/paging.css);
 @import url(./base/form.css);

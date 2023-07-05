@@ -1,46 +1,13 @@
 <template>
     <div class="page">
-        <div class="page__header">
-            <div class="page__title">Thảo luận/ Hỏi đáp</div>
-            <div class="page__button">
-                <button @click="btnAddOnClick" class="m-button m-button-icon m-button--primary icon icon-20 icon--add">
-                    Thêm thảo luận/ câu hỏi
-                </button>
-            </div>
-        </div>
-        <div class="page__container">
-            <div class="page__toolbar">
-                <div class="toolbar__left">
-                    <input type="text" class="m-input m-input-search">
-                </div>
-                <div class="toolbar__right">
-                    <button class="btn--notext icon icon-20 icon--refresh" title="LÀM MỚI DỮ LIỆU"></button>
-                </div>
-            </div>
-            <div class="thread-list">
-                <div class="thread-item" v-for="(item, index) in data" :key="index">
-                    <div class="thread__icon icon--question"
-                        :class="{ 'icon--question': item.ThreadType == 1, 'icon--discuss': item.ThreadType == 2, 'icon--share': item.ThreadType == 3 }">
-                    </div>
-                    <div class="thread__content">
-                        <div class="thread-item__title">{{ item.ThreadName }}</div>
-                        <div class="thread-item__info">
-                            <div class="thread__user">{{ item.ThreadUser }}</div>
-                            <div class="thread__answer-number">Đã trả lời: {{ item.AnswerNumber }}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        Thảo luận/ hỏi đáp
     </div>
     <DisscusForm></DisscusForm>
 </template>
 <script>
 // import DiscussDetail from './DiscussDetail.vue';
-import DisscusForm from './DisscusForm.vue';
 export default {
     name: "DiscussList",
-    components:{DisscusForm},
     created() {
         // fetch('data/threads.json')
         //     .then((response) => response.json())

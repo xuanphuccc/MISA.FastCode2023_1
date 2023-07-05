@@ -5,7 +5,7 @@
         <div class="logo-2">MISA QA</div>
       </div>
       <div class="header__right">
-        <input type="text">
+        <div></div>
         <div class="avatar"></div>
       </div>
     </div>
